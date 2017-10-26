@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import AddOption from './components/AddOption';
-import Action from './components/Action';
-import Header from './components/Header';
-import Options from './components/Options';
+import AddOption from './AddOption';
+import Action from './Action';
+import Header from './Header';
+import Options from './Options';
 
-class IndecisionApp extends React.Component {
+export default class IndecisionApp extends React.Component {
 
     constructor(props) {
         super(props);
@@ -84,4 +83,3 @@ IndecisionApp.defaultProps = {
     options: []
 }
 
-ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
